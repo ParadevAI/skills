@@ -1,10 +1,10 @@
 ---
 name: superset-doctor
-description: Diagnose and fix Superset problems — connection failures, offline hosts, terminals not attaching, auth or update issues. Use when the user reports something broken or misbehaving in Superset itself, before filing feedback.
+description: Diagnose and fix Paradev problems — connection failures, offline hosts, terminals not attaching, auth or update issues. Use when the user reports something broken or misbehaving in Paradev itself, before filing feedback.
 argument-hint: describe the symptom
 ---
 
-# Superset Doctor
+# Paradev Doctor
 
 Diagnose first, change one thing at a time, verify after each change.
 

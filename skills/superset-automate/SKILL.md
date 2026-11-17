@@ -1,10 +1,10 @@
 ---
 name: superset-automate
-description: Turn a recurring chore into a Superset automation — drafts the agent prompt, confirms schedule and target, creates it with the CLI, and reviews the first run together. Use when the user wants a scheduled or recurring agent, a daily/weekly job, or to automate a repeating task with Superset.
+description: Turn a recurring chore into a Paradev automation — drafts the agent prompt, confirms schedule and target, creates it with the CLI, and reviews the first run together. Use when the user wants a scheduled or recurring agent, a daily/weekly job, or to automate a repeating task with Paradev.
 argument-hint: describe the recurring task
 ---
 
-# Superset Automate
+# Paradev Automate
 
 Turn "I keep doing X every morning" into an automation that does X on a schedule.
 

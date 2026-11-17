@@ -1,10 +1,10 @@
 ---
 name: superset-standup
-description: Digest of what your Superset agents did — sweeps workspaces, tasks, and agent terminals, then reports what finished, what needs review, and what's blocked. Use when the user asks what their agents did, wants a standup or summary of agent work, or returns after being away.
+description: Digest of what your Paradev agents did — sweeps workspaces, tasks, and agent terminals, then reports what finished, what needs review, and what's blocked. Use when the user asks what their agents did, wants a standup or summary of agent work, or returns after being away.
 argument-hint: optional timeframe or project
 ---
 
-# Superset Standup
+# Paradev Standup
 
 Answer "what happened while I was away?" from real state, not guesses. Entirely read-only.
 
