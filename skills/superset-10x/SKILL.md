@@ -1,12 +1,12 @@
 ---
 name: superset-10x
-description: Personalized audit that teaches advanced Superset features the user isn't using yet — automations, parallel agents, tasks, multi-host, terminals, custom commands, MCP. Use when the user wants to get more out of Superset, learn advanced Superset features, or 10x their Superset workflow.
+description: Personalized audit that teaches advanced Paradev features the user isn't using yet — automations, parallel agents, tasks, multi-host, terminals, custom commands, MCP. Use when the user wants to get more out of Paradev, learn advanced Paradev features, or 10x their Paradev workflow.
 argument-hint: optional topic, e.g. automations
 ---
 
-# Superset 10x
+# Paradev 10x
 
-Teach the user the advanced Superset features they aren't using yet — grounded in their real usage, not a lecture. If they named a topic after the command, skip the audit and go straight to that topic.
+Teach the user the advanced Paradev features they aren't using yet — grounded in their real usage, not a lecture. If they named a topic after the command, skip the audit and go straight to that topic.
 
 ## 1. Audit (read-only)
 
@@ -19,7 +19,7 @@ Run in parallel and tolerate individual failures (prefer `--json` where supporte
 - `superset hosts list`
 - `superset tasks list`
 
-If the CLI is missing, offer to install it: `curl -fsSL https://superset.sh/cli/install.sh | sh`. If unauthenticated, `superset auth login`. If the audit is impossible, ask the user what their current workflow looks like and proceed from their answer.
+If the CLI is missing, offer to install it: `curl -fsSL https://paradev.com/cli/install.sh | sh`. If unauthenticated, `superset auth login`. If the audit is impossible, ask the user what their current workflow looks like and proceed from their answer.
 
 ## 2. Scorecard
 

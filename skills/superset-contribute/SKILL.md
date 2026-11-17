@@ -1,23 +1,23 @@
 ---
 name: superset-contribute
-description: Set up a Superset open-source contribution — fork and clone superset-sh/superset, run local dev setup, and follow the repo's contribution rules through to a merge-ready PR. Use when the user wants to contribute to Superset, fix a Superset bug themselves, or prepare a PR against superset-sh/superset.
+description: Set up a Paradev open-source contribution — fork and clone superset-sh/superset, run local dev setup, and follow the repo's contribution rules through to a merge-ready PR. Use when the user wants to contribute to Paradev, fix a Paradev bug themselves, or prepare a PR against superset-sh/superset.
 argument-hint: what they want to contribute
 ---
 
-# Contribute to Superset
+# Contribute to Paradev
 
-Take the user from "I want to fix/build X in Superset" to a merge-ready PR that follows the repo's rules. If the checked-out repo has `CONTRIBUTING.md` / `DEVELOPMENT.md` / `AGENTS.md`, those files are authoritative — read them and prefer them over this summary.
+Take the user from "I want to fix/build X in Paradev" to a merge-ready PR that follows the repo's rules. If the checked-out repo has `CONTRIBUTING.md` / `DEVELOPMENT.md` / `AGENTS.md`, those files are authoritative — read them and prefer them over this summary.
 
 ## 1. Scope first
 
 - Bug fixes, docs, small improvements → straight to a PR, no issue needed
-- New features or larger changes → open an issue first at https://github.com/superset-sh/superset/issues/new/choose to agree on the approach before building
-- Questions → Superset Discord, not an issue
+- New features or larger changes → open an issue first at https://github.com/paradevai/paradev/issues/new/choose to agree on the approach before building
+- Questions → Paradev Discord, not an issue
 
 ## 2. Set up
 
 1. `gh auth status`, then fork and clone: `gh repo fork superset-sh/superset --clone` (or add a fork remote to an existing clone)
-2. Best experience: add the clone as a project in the Superset app and create a workspace per change — contributions develop inside managed worktrees
+2. Best experience: add the clone as a project in the Paradev app and create a workspace per change — contributions develop inside managed worktrees
 3. In the new workspace/worktree, run `./.superset/setup.local.sh` once (configures per-workspace ports, app identity, local services, and a seeded dev account — no external credentials needed), then `bun run dev`
 4. Bun only — never npm/yarn/pnpm. Read the root `AGENTS.md` and follow it.
 

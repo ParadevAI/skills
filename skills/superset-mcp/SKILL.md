@@ -1,11 +1,11 @@
 ---
 name: superset-mcp
-description: Connect to the Superset MCP server to create Git-worktree workspaces, launch coding-agent sessions, schedule automations, and manage tasks on a user's Superset account. Use when an agent needs to orchestrate parallel coding agents programmatically over MCP instead of the CLI.
+description: Connect to the Paradev MCP server to create Git-worktree workspaces, launch coding-agent sessions, schedule automations, and manage tasks on a user's Paradev account. Use when an agent needs to orchestrate parallel coding agents programmatically over MCP instead of the CLI.
 ---
 
-# Superset MCP Server
+# Paradev MCP Server
 
-[Superset](https://superset.sh) runs parallel AI coding agents in isolated Git worktrees on a user's registered machines. Its MCP server (Streamable HTTP, JSON-RPC 2.0) exposes the full orchestration surface as tools.
+[Paradev](https://paradev.com) runs parallel AI coding agents in isolated Git worktrees on a user's registered machines. Its MCP server (Streamable HTTP, JSON-RPC 2.0) exposes the full orchestration surface as tools.
 
 ```
 https://api.superset.sh/api/v2/agent/mcp   (alias: https://api.superset.sh/mcp)
@@ -31,9 +31,9 @@ Any MCP client that speaks Streamable HTTP works — point it at the URL above.
 Unauthenticated requests return `401` with `WWW-Authenticate: Bearer resource_metadata="https://api.superset.sh/.well-known/oauth-protected-resource"`. Two options:
 
 1. **OAuth 2.1 (recommended)** — authorization code + PKCE with RFC 7591 dynamic client registration; the user approves access in a browser. Most MCP clients handle this automatically on first connect.
-2. **API key** — the user creates one in the Superset app and the agent sends it as a Bearer token.
+2. **API key** — the user creates one in the Paradev app and the agent sends it as a Bearer token.
 
-Full walkthrough: <https://superset.sh/auth.md>
+Full walkthrough: <https://paradev.com/auth.md>
 
 ## Tools
 
@@ -57,4 +57,4 @@ Tools carry MCP behavioral annotations: reads are `readOnlyHint`, the three `*_d
 
 ## Learning surface
 
-The documentation is also served over MCP, unauthenticated, at `https://docs.superset.sh/mcp` (`docs_search` + `docs_read`). Human-readable docs: <https://docs.superset.sh/mcp-server>.
+The documentation is also served over MCP, unauthenticated, at `https://docs.paradev.com/mcp` (`docs_search` + `docs_read`). Human-readable docs: <https://docs.paradev.com/mcp-server>.
