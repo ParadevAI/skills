@@ -23,7 +23,7 @@ Diagnose first, change one thing at a time, verify after each change.
 | Host shows offline | `superset hosts wake <id>`; confirm the machine is awake and online |
 | Host service not running | `superset start` |
 | CLI and desktop app version mismatch, or stale CLI | `superset update` |
-| App-side misbehavior (macOS) | read the newest entries in `~/Library/Logs/Paradev/main.log` for errors |
+| App-side misbehavior (macOS) | read the newest entries in `~/Library/Logs/Superset/main.log` for errors |
 
 Propose the matching fix and get the user's go-ahead before running anything that changes state. Never delete data as a "fix".
 
